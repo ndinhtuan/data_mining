@@ -19,5 +19,7 @@ We can loop all possible transaction and all possible candidate and increase cou
 So we can use hash-tree to save candidate in hash-tree and then generate k-subsets of transaction, from that use each subsets to increase counter of candidate sets
 
 Step1: Build sub-transaction of origin transaction 
+
 Step2: Build hash-tree include Candidate set 
+
 Step3: Iterating over all sub-transaction on hash-tree, and increate counter of canidate sub-transaction visit.
