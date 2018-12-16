@@ -19,13 +19,17 @@ We can loop all possible transaction and all possible candidate and increase cou
 So we can use hash-tree to save candidate in hash-tree and then generate k-subsets of transaction, from that use each subsets to increase counter of candidate sets
 
 Step 1: Build sub-transaction of origin transaction.
+
 Step 2: Build hash-tree include Candidate set.
+
 Step 3: Iterating over all sub-transaction on hash-tree, and increate counter of canidate sub-transaction visit.
 
 ### 2. KNN Algorithm 
 
 Step 1: Determining number K (number of neighbours we will evaluate), data D (feature and label).
+
 Step 2: Find Similar measure on of test data on each training data, find K sample of training set has largest similar.
+
 Step 3: Find Most appearance label on K label and assign that label for test sample. 
 
 #### Advantage: 
