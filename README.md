@@ -10,11 +10,11 @@ Apriori Algorithm consist of 3 phase:
 2. Counting each set c in Ck on transitions T 
 3. Remove set c not bigger than supmin  
 
-* __Phase 1 :__
+Phase 1 :
 With phase 1 we can Brute Force generate all possible candidate with : add any item haven't been in set. -> Gen big candidate 
 But that way is slow, I have gennerate with self-join of Ck-1: F1, F2 in Ck-1, F1 can join F1 if and only if first  k-2 item of F1 and F2 are same.
 
-* __Phase 2:__ 
+Phase 2: 
 We can loop all possible transaction and all possible candidate and increase counter when see each candidate in each transaction but it need so much computation. 
 So we can use hash-tree to save candidate in hash-tree and then generate k-subsets of transaction, from that use each subsets to increase counter of candidate sets
 
@@ -40,3 +40,11 @@ Step 3: Find Most appearance label on K label and assign that label for test sam
 1. Don't have train so all computation phase in test -> test phase is very slow
 2. Easy to effect by noise data 
 3. Have to save all data train on memory 
+
+### 3. Decision Tree - ID3 
+
+### 4. K-Means
+
+### 5. HAC 
+
+### 6. Bayes Naive
