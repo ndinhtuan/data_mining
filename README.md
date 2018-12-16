@@ -10,11 +10,11 @@ Apriori Algorithm consist of 3 phase:
 2. Counting each set c in Ck on transitions T 
 3. Remove set c not bigger than supmin  
 
-Phase 1 :
+*__Phase 1 :__
 With phase 1 we can Brute Force generate all possible candidate with : add any item haven't been in set. -> Gen big candidate 
 But that way is slow, I have gennerate with self-join of Ck-1: F1, F2 in Ck-1, F1 can join F1 if and only if first  k-2 item of F1 and F2 are same.
 
-Phase 2: 
+*__Phase 2:__ 
 We can loop all possible transaction and all possible candidate and increase counter when see each candidate in each transaction but it need so much computation. 
 So we can use hash-tree to save candidate in hash-tree and then generate k-subsets of transaction, from that use each subsets to increase counter of candidate sets
 
