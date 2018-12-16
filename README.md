@@ -18,8 +18,21 @@ Phase 2:
 We can loop all possible transaction and all possible candidate and increase counter when see each candidate in each transaction but it need so much computation. 
 So we can use hash-tree to save candidate in hash-tree and then generate k-subsets of transaction, from that use each subsets to increase counter of candidate sets
 
-Step1: Build sub-transaction of origin transaction 
+Step 1: Build sub-transaction of origin transaction.
+Step 2: Build hash-tree include Candidate set.
+Step 3: Iterating over all sub-transaction on hash-tree, and increate counter of canidate sub-transaction visit.
 
-Step2: Build hash-tree include Candidate set 
+### 2. KNN Algorithm 
 
-Step3: Iterating over all sub-transaction on hash-tree, and increate counter of canidate sub-transaction visit.
+Step 1: Determining number K (number of neighbours we will evaluate), data D (feature and label).
+Step 2: Find Similar measure on of test data on each training data, find K sample of training set has largest similar.
+Step 3: Find Most appearance label on K label and assign that label for test sample. 
+
+#### Advantage: 
+1. Simple, don't have to train
+2. Have no assumption about class distribution
+
+#### Disadvantage: 
+1. Don't have train so all computation phase in test -> test phase is very slow
+2. Easy to effect by noise data 
+3. Have to save all data train on memory 
